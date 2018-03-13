@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'Bebas';
+  src: url('../font/BEBAS.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: Bebas;
+}
+
+#menu {
+  margin-top: 244px;
+}
+
+#menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+#menu li a:hover {
+  color: rgb(219, 211, 223);
+}
+
+.menu-label {
+  position: absolute;
+  font-size: 66px;
+  color: white;
+  top: 22px;
+  left: 29px;
+}
+
+.profilepicture {
+  position: absolute;
+  top: 217px;
+  left: 135px;
+  width: 271px;
+  height: 347px;
+  border-bottom-left-radius: 20px;
+}
+
+.label-name {
+  position: absolute;
+  font-size: 80px;
+  color: #0f0;
+  margin-left: 135px;
+  margin-top: 50px;
+  word-spacing: 20px;
+}
+
+.undertitle {
+  position: absolute;
+  font-size: 50px;
+  color: white;
+  margin-left: 135px;
+  margin-top: 133px;
+  word-spacing: 20px;
+}
+
+#left-container {
+  position: absolute;
+  float: left;
+  height: 100%;
+  width: 20%;
+  background-color: black;
+}
+
+#right-container {
+  position: absolute;
+  right: 0;
+  width: 80%;
+  height: 100%;
+  background-color: #1f1f1f;
+}

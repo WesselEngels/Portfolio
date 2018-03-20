@@ -8,16 +8,22 @@
 body {
   margin: 0;
   font-family: Bebas;
+  overflow-x: hidden;
 }
 
 #menu {
-  margin-top: 244px;
+  margin-top: 175px;
+  margin-left: 20px;
 }
 
 #menu li a {
   color: white;
   text-decoration: none;
   font-size: 30px;
+}
+
+#menu ul {
+  list-style-type: none;
 }
 
 #menu li a:hover {
@@ -33,6 +39,10 @@ body {
 }
 
 .profilepicture {
+  -webkit-filter: grayscale(100%);
+  /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(100%);
+  /* FF 35+ */
   position: absolute;
   top: 217px;
   left: 135px;
@@ -41,12 +51,19 @@ body {
   border-bottom-left-radius: 20px;
 }
 
+.profilepicture:hover {
+  -webkit-filter: grayscale(0%);
+  /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(0%);
+  /* FF 35+ */
+}
+
 .label-name {
   position: absolute;
   font-size: 80px;
   color: #0f0;
   margin-left: 135px;
-  margin-top: 50px;
+  margin-top: 28px;
   word-spacing: 20px;
 }
 
@@ -55,22 +72,305 @@ body {
   font-size: 50px;
   color: white;
   margin-left: 135px;
-  margin-top: 133px;
+  margin-top: 111px;
   word-spacing: 20px;
 }
 
-#left-container {
+.left-container {
   position: absolute;
-  float: left;
   height: 100%;
+  left: 0;
   width: 20%;
-  background-color: black;
+  background-color: #343a40;
+  color: white;
 }
 
-#right-container {
+.right-container {
   position: absolute;
   right: 0;
   width: 80%;
   height: 100%;
   background-color: #1f1f1f;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.project-label {
+  position: absolute;
+  font-size: 90px;
+  color: #0f0;
+  margin-left: 298px;
+  margin-top: 28px;
+  word-spacing: 20px;
+}
+
+.subjects-label {
+  position: absolute;
+  font-size: 90px;
+  color: #0f0;
+  margin-left: 144px;
+  margin-top: 28px;
+  word-spacing: 20px;
+}
+
+.first-paragraph {
+  position: absolute;
+  color: #0f0;
+  font-size: 18px;
+  margin-left: 446px;
+  margin-top: 253px;
+  margin-right: 20px;
+  word-spacing: 10px;
+}
+
+#footer {
+  color: white;
+  font-size: 10px;
+  padding-top: 6px;
+  margin-bottom: 8px;
+  word-spacing: 2px;
+  margin-left: 40px;
+  margin-top: 50px;
+}
+
+.second-paragraph {
+  position: absolute;
+  color: white;
+  font-size: 15px;
+  margin-left: 446px;
+  margin-top: 330px;
+  margin-right: 20px;
+  word-spacing: 10px;
+}
+
+.facebook {
+  height: 35px;
+  width: 35px;
+  margin-left: 40px;
+}
+
+.facebook:hover {
+  opacity: 0.8;
+}
+
+.linked {
+  height: 35px;
+  width: 35px;
+  margin-left: 5px;
+}
+
+.linked:hover {
+  opacity: 0.8;
+}
+
+.github {
+  height: 40px;
+  width: 40px;
+  margin-left: 5px;
+}
+
+.github:hover {
+  opacity: 0.8;
+}
+
+.whatsapp img {
+  height: 35px;
+  width: 35px;
+  margin-left: 40px;
+}
+
+.whatsapp img:hover {
+  opacity: 0.8;
+}
+
+.whatsapp:hover .tooltiptext {
+  visibility: visible;
+  background-color: #343a40;
+}
+
+.mail img {
+  height: 35px;
+  width: 35px;
+  margin-left: 40px;
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.mail img:hover {
+  opacity: 0.8;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  margin-left: 10px;
+}
+
+.mail:hover .tooltiptext {
+  visibility: visible;
+  background-color: #343a40;
+}
+
+.socialmedia {
+  margin-left: 40px;
+  margin-top: 80px;
+  color: white;
+}
+
+.mb-3 {
+  margin-top: 250px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.mb-4 {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.box-size {
+  padding: 0.1rem;
+  background-color: black;
+}
+
+/* .web-label {
+  position: absolute;
+  color: white;
+  margin-top: 185px;
+  margin-left: 20px;
+}
+
+.sharp-label {
+  color: white;
+  margin-bottom: 20px;
+  margin-left: 20px;
+} */
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  -webkit-filter: grayscale(100%);
+  /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(100%);
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-transform: translatey(-100px);
+  -ms-transform: translatey(-100px);
+  transform: translatey(-100px);
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  padding: 10px;
+}
+
+.hovereffect a.info {
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  margin: 50px 0 0;
+  padding: 7px 14px;
+}
+
+.hovereffect a.info:hover {
+  box-shadow: 0 0 5px #fff;
+}
+
+.hovereffect:hover {
+  -webkit-filter: grayscale(0%);
+  /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(0%);
+}
+
+.hovereffect:hover img {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.hovereffect:hover h2, .hovereffect:hover a.info {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -ms-transform: translatey(0);
+  -webkit-transform: translatey(0);
+  transform: translatey(0);
+}
+
+.hovereffect:hover a.info {
+  -webkit-transition-delay: .2s;
+  transition-delay: .2s;
+}
+
+.subject {
+  color: white;
+  word-spacing: 10px;
+  margin-bottom: 10px;
+}
+
+.subject button {
+  outline: none;
+  background-color: white;
+  color: #0f0;
+  border: 2px solid #0f0;
+  width: 120px;
+  border-radius: 20px;
+}
+
+.subject button:hover {
+  background-color: #1f1f1f;
+}
+
+.dots {
+  color: #0f0;
+  margin-bottom: 0;
 }

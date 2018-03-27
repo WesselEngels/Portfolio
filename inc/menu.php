@@ -8,7 +8,7 @@
       <a class="nav-link" href="project.php">Projects</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="vakken.php">Subjects</a>
+      <a class="nav-link" href="about.php">About</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="contact.php">Contact</a></li>

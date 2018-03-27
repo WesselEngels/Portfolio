@@ -4,7 +4,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="icon" href="img/favicon.ico" type="img/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <title>Portfolio</title>
   </head>
@@ -22,11 +21,7 @@
       ?>
      </div>
      <div class="col-ld-9 right-container">
-      <label class="label-name">My name is Wessel Engels</label>
-      <label class="undertitle">Web Developer</label>
-      <img class="profilepicture" src="img/picture.jpg">
-      <p class="first-paragraph">My name is Wessel Engels and i live in a small village called Oploo<label style="color:white;margin-bottom:0;">. </label> I'm currently studying Application Designer in Helmond<label style="color:white;margin-bottom:0;">. </label></p>
-         <p class="second-paragraph">I'm learning to become a proffesionel web developer<label class="dots">.</label></p>
+       <label class="animated fadeIn label-name">Welcome to my website</label>
     </div>
     </div>
 

@@ -8,7 +8,6 @@
 body {
   margin: 0;
   font-family: Bebas;
-  overflow-x: hidden;
 }
 
 #menu {
@@ -92,6 +91,7 @@ body {
   height: 100%;
   background-color: #1f1f1f;
   overflow-y: scroll;
+  overflow-y: hidden;
   overflow-x: hidden;
 }
 
@@ -241,7 +241,7 @@ body {
   background-color: black;
 }
 
-/* .web-label {
+.web-label {
   position: absolute;
   color: white;
   margin-top: 185px;
@@ -252,7 +252,7 @@ body {
   color: white;
   margin-bottom: 20px;
   margin-left: 20px;
-} */
+}
 
 .hovereffect {
   width: 100%;
@@ -373,4 +373,38 @@ body {
 .dots {
   color: #0f0;
   margin-bottom: 0;
+}
+
+.top-buffer {
+  margin-top: 200px;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
 }
